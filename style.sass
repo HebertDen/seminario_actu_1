@@ -1,0 +1,105 @@
+@import "reset"
+$mg: 40px
+$mg-bottom: 20px
+body
+    background: #f9f9f9
+    font-family: 'Roboto'
+
+header
+    position: fixed
+    background: yellow
+    width: 100%
+    margin-bottom: $mg
+    padding: 20px 10px
+    box-shadow: 1px 0px 8px #d4d4d4
+    nav
+        display: grid
+        grid-template-columns: 300px 1fr
+        figure
+            img
+                width: 12%
+                cursos: pointer
+        ul
+            display: inline-flex
+            algin-items: center
+            justify-content: flex-end
+            li
+                margin-right: 20px
+
+main
+    display: grid
+    grid-template-columns: 800px
+    justify-content: center
+    section
+        background: #ffffff
+        padding: 60px
+        margin-top: $mg
+        box-shadow: 1px 0px 8px #d4d4d4
+        h1
+            font-size: 36px
+            margin-bottom: $mg
+        figure
+            margin-bottom: $mg
+            img
+                width: 100%
+        article
+            margin-bottom: $mg
+            h2
+                margin-bottom: $mg
+
+            ul
+                padding-left: 30px
+                li
+                    list-style: disc
+                    margin-bottom: 10px
+            input, label, textarea
+                display: block
+                width: 100%
+                padding: 10px
+            input
+                margin-bottom: $mg-bottom
+                border: none
+                border-bottom: 1px solid #000
+            textarea
+                margin-bottom: $mg-bottom
+            button
+                border: none
+                border-radius: 5px
+                background: green
+                color: white
+                padding: 10px 20px
+                cursor: pointer
+                box-shadow: 1px 0px 5px #ccc
+
+footer
+    margin-top: $mg
+    padding: 20px
+    background-color: rgba(20, 20, 20, 0.1)
+
+@media screen and (max-width: 500px)
+    header
+        nav
+            grid-template-columns: 1fr
+            figure
+                width: 50%
+            ul
+                display: none
+    main
+        grid-template-columns: 1fr
+        justify-content: center
+        align-items: center
+
+    footer
+        width: 100%
+
+@media screen and (max-width: 700px)
+    header
+        nav
+            figure
+                width: 90%
+            ul
+                display: none
+    main
+        grid-template-columns: 600px
+        justify-content: center
+        align-items: center

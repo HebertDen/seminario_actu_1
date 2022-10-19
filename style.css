@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #f9f9f9;
+  font-family: "Roboto";
+}
+
+header {
+  position: fixed;
+  background: yellow;
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 20px 10px;
+  box-shadow: 1px 0px 8px #d4d4d4;
+}
+header nav {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+header nav figure img {
+  width: 12%;
+  cursos: pointer;
+}
+header nav ul {
+  display: inline-flex;
+  algin-items: center;
+  justify-content: flex-end;
+}
+header nav ul li {
+  margin-right: 20px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 800px;
+  justify-content: center;
+}
+main section {
+  background: #ffffff;
+  padding: 60px;
+  margin-top: 40px;
+  box-shadow: 1px 0px 8px #d4d4d4;
+}
+main section h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+main section figure {
+  margin-bottom: 40px;
+}
+main section figure img {
+  width: 100%;
+}
+main section article {
+  margin-bottom: 40px;
+}
+main section article h2 {
+  margin-bottom: 40px;
+}
+main section article ul {
+  padding-left: 30px;
+}
+main section article ul li {
+  list-style: disc;
+  margin-bottom: 10px;
+}
+main section article input, main section article label, main section article textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+main section article input {
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+main section article textarea {
+  margin-bottom: 20px;
+}
+main section article button {
+  border: none;
+  border-radius: 5px;
+  background: green;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 1px 0px 5px #ccc;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: rgba(20, 20, 20, 0.1);
+}
+
+@media screen and (max-width: 500px) {
+  header nav {
+    grid-template-columns: 1fr;
+  }
+  header nav figure {
+    width: 50%;
+  }
+  header nav ul {
+    display: none;
+  }
+  main {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  footer {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  header nav figure {
+    width: 90%;
+  }
+  header nav ul {
+    display: none;
+  }
+  main {
+    grid-template-columns: 600px;
+    justify-content: center;
+    align-items: center;
+  }
+}/*# sourceMappingURL=style.css.map */
